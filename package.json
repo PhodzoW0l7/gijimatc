@@ -2,7 +2,7 @@
   "name": "gijimatrainingacademy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://PhodzoW0l7.github.io/Gijimatrainingacademy",
+  "homepage": "https://PhodzoW0l7.github.io/gijimatc",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
