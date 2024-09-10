@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    margin-top: 10px; /* Reduce the space between Hero and Title */
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .btn {
+        padding: 14px 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .title {
+        margin-top: 5px; /* Further reduce the space between Hero and Title */
+    }
+    .btn {
+        padding: 12px 20px; /* Adjust button padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .title {
+        margin-top: 2px; /* Further reduce the space between Hero and Title */
+    }
+    .btn {
+        padding: 10px 18px; /* Adjust button padding for smaller screens */
+    }
+}

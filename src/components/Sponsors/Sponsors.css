@@ -1,0 +1,67 @@
+.sponsors {
+    padding: 20px;
+}
+
+.sponsors p {
+    text-align: justify; /* Justify the paragraph content */
+    margin: 0 10rem;
+}
+
+.curved {
+    background: #ba9653;
+    color: #fff;
+    text-align: center;
+    width: 100%; /* Ensure the container spans the full width */
+    position: relative; 
+    margin-top: 20px; /* Adjust the value as needed */
+    padding: 10px;
+}
+
+.curved h1 {
+    font-size: 2rem;
+    color: #211d52;
+    padding-top: 20px;
+}
+
+.curved p {
+    margin: 0 5rem;
+    line-height: 1.6; /* Improve readability */
+    font-size: 1.1rem; /* Slightly increase font size for better readability */
+    letter-spacing: 0.5px; /* Add slight letter spacing for a cleaner look */
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.curved svg {
+    display: flex; /* Use Flexbox to align items */
+    justify-content: center; /* Center align the images horizontally */
+    align-items: center; /* Center align the images vertically */
+}
+
+svg image {
+    width: 150px; /* Increase image size */
+    height: 150px; /* Increase image size */
+    margin: 0 30px; /* Add some space between the images */
+    transition: transform 0.3s ease;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .sponsors p {
+        margin: 0 2rem; /* Adjust margin for smaller screens */
+    }
+
+    .curved p {
+        margin: 0 2rem; /* Adjust margin for smaller screens */
+    }
+
+    svg image {
+        width: 100px; /* Adjust image size for smaller screens */
+        height: 100px; /* Adjust image size for smaller screens */
+        margin: 0 10px; /* Adjust spacing between images for smaller screens */
+    }
+
+    .curved h1 {
+        font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+}

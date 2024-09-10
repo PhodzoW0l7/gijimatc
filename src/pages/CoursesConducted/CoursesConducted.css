@@ -1,0 +1,164 @@
+/* Hero section styling */
+.courses-hero {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(84, 101, 124, 0.95),
+      rgba(240, 240, 240, 0.15) 80%,
+      rgba(245, 245, 245, 1) 100%
+  ), url('../../assets/coursesconducted.jpg');
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+/* Section styling */
+.courses-details, .impact-section {
+  padding: 40px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.detail-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #211d52;
+  line-height: 1.6;
+}
+
+.impact-text {
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #211d52;
+  line-height: 1.6;
+}
+
+/* Blocks Grid Layout */
+.blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for better image fit */
+  gap: 20px; /* Space between blocks */
+  margin: 10px 10px;
+}
+
+.block {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.block img {
+  width: 100%; /* Fit the image within the block */
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio and cover the block area */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.block p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #211d52;
+}
+
+/* Video player styling */
+.video-player {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between videos */
+  margin: 20px 0;
+}
+
+.video-player video {
+  width: 300px; /* Set equal width */
+  height: 300px; /* Set equal height */
+  border-radius: 8px;
+  object-fit: cover; /* Maintain aspect ratio and cover the block area */
+  margin: 0 10px; /* Add space between videos */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .courses-hero {
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+
+  .hero-content {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .courses-details, .impact-section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .detail-text, .impact-text {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .blocks-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .block img {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .video-player {
+    flex-direction: column; /* Stack videos vertically on smaller screens */
+    align-items: center;
+  }
+
+  .video-player video {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    margin: 10px 0; /* Add space between videos */
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-hero {
+    height: 40vh; /* Adjust height for smaller screens */
+  }
+
+  .hero-content {
+    padding: 0 5px; /* Adjust padding for smaller screens */
+  }
+
+  .courses-details, .impact-section {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .detail-text, .impact-text {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .blocks-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .block img {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .video-player {
+    flex-direction: column; /* Stack videos vertically on smaller screens */
+    align-items: center;
+  }
+
+  .video-player video {
+    width: 100%; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    margin: 10px 0; /* Add space between videos */
+  }
+}

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    gap: 4px;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #c5bdbd;
+  }
+  
+  .about-us, .about-us2 {
+    width: 100%;
+  }
+  
+  /* Heading styling for both sections */
+  .about-us h1, .about-us2 h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #211d52;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+  }
+  
+  .about-us h1::after, .about-us2 h1::after {
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: #ba9653;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+  }
+  
+  /* Wrapper for content */
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 60px;
+    margin: 60px auto;
+  }
+  
+  .content, .content2 {
+    flex: 1;
+    text-align: left;
+    padding: 0px 30px;
+    color: #333;
+  }
+  
+  /* Image section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 30px;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 800px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    .content, .content2 {
+      order: 2;
+      margin: 20px 0;
+    }
+  
+    .image-section {
+      order: 1;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrapper {
+      padding: 0px 20px;
+    }
+  
+    .about-us h1, .about-us2 h1 {
+      font-size: 30px;
+    }
+  
+    .content, .content2 {
+      padding: 0px 10px;
+    }
+  
+    .image-section {
+      padding: 0;
+    }
+  }
+  

@@ -1,0 +1,66 @@
+.programs {
+    margin: 80px auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+}
+
+.program {
+    flex-basis: 31%;
+    position: relative;
+    margin-bottom: 20px; /* Add some space between rows */
+}
+
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(124, 114, 84, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+
+.caption img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.program:hover .caption {
+    opacity: 1;
+    padding-top: 0;
+}
+
+@media (max-width: 1024px) {
+    .program {
+        flex-basis: 48%; /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 650px) {
+    .programs {
+        flex-direction: column;
+        align-items: stretch; /* Ensure full width for each item */
+    }
+    .program {
+        flex-basis: 100%;
+        margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+}

@@ -1,0 +1,99 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted min-width for better responsiveness */
+    gap: 2rem;
+    background: #D3D3D3;
+    padding: 40px 10% 10px;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 10px solid #211d52; /* Thin solid line */
+}
+
+.footer-content {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.footer-content h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+}
+
+.footer-content img {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-content ul {
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullet points */
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+}
+
+.footer-content li a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.40s ease;
+    text-align: left; /* Align text to the left */
+}
+
+.footer-content p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.icons a {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    margin-right: 17px;
+    transition: all 0.40s ease;
+}
+
+.icons a:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        padding: 20px 5%;
+    }
+
+    .footer-content {
+        text-align: center; /* Center align text for smaller screens */
+    }
+
+    .footer-content img {
+        max-width: 200px; /* Adjust logo size for smaller screens */
+    }
+
+    .footer-content h4 {
+        font-size: 18px; /* Adjust heading size for smaller screens */
+    }
+
+    .footer-content p, .footer-content li a {
+        font-size: 12px; /* Adjust text size for smaller screens */
+    }
+
+    .icons a {
+        font-size: 18px; /* Adjust icon size for smaller screens */
+        margin-right: 10px;
+    }
+}
